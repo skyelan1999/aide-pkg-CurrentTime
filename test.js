@@ -48,4 +48,8 @@ assert.ok(currentWeek.weekNumber >= 1 && currentWeek.weekNumber <= 53);
 assert.throws(() => tools[1].handler({ date: '2021-02-29' }), RangeError);
 assert.throws(() => tools[1].handler({ date: 'next Friday' }), RangeError);
 assert.throws(() => tools[1].handler({ date: '2026-09-30', timeZone: 'No/Such_Zone' }), RangeError);
+for(const timeZone of [null,123,''])assert.throws(()=>tools[0].handler({timeZone}));
+for(const date of [null,false,123,''])assert.throws(()=>tools[1].handler({date}));
+assert.equal(tools[0].handler({timeZone:'Asia/Kolkata'}).clockSource,'aide-host-system-clock');
+assert.equal(tools[1].handler({date:'0001-01-01',timeZone:'UTC'}).weekNumber,1);
 console.log('current-time plugin PASS');

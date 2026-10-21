@@ -1,0 +1,44 @@
+{
+  "version": "1.1.0",
+  "hostCommit": "a0ffa35a8d0121374049df17b5e5d375009bd8f6",
+  "actualHost": {
+    "status": "PASS",
+    "command": "source /workspace/.aide-cloud/env.sh; AIDE_SOURCE=/workspace/aide bash /workspace/aide-pkg-almanac/scripts/verify-host.sh",
+    "scope": "Disposable Aide testApp, three actual ZIP imports and executable tools, Chromium sandbox iframe and MessagePort bridge under Go race; final run 15.391s; no real models/user data"
+  },
+  "browser": {
+    "status": "PASS",
+    "scope": "Actual Aide testApp ZIP import, executable tools and sandboxed workbench/MessagePort bridge, no real models or user data",
+    "checks": [
+      "Shanghai today under Los Angeles browser timezone",
+      "Spring Festival/lunar/yi-ji from real host tools",
+      "29/31 day month, navigation, keyboard focus",
+      "leap lunar month, Qingming, extra details",
+      "1901/2099 navigation boundaries",
+      "1440/390 comfort/blue light/dark, no horizontal overflow",
+      "manual theme and today",
+      "LunarCalendar official leap/2033/2057 dates, calendar keyboard and eight viewport/themes",
+      "CurrentTime ticking, timezones, ISO week, invalid zone recovery and eight viewport/themes",
+      "CurrentTime close stops calls",
+      "tool failure message/retry recovery",
+      "workbench close, no external browser requests or page errors"
+    ],
+    "errors": []
+  },
+  "package": {
+    "path": "packages/v1.1.0/aide-pkg-CurrentTime-v1.1.0.zip",
+    "sha256": "3959e61044b8e3a4a123b466ace916cf061c0f19d63680df8989c3d8341b793d",
+    "bytes": 12517,
+    "reproducible": true
+  },
+  "runtimeSha256": {
+    "index.js": "b3db579744968c0544841803f7c3b3cdf3e6430371f8485428f14012658908b6",
+    "manifest.json": "36c21af25f164fa8e0aab83689ef1c52b0798e4a725d69513f90ef6d23d65575",
+    "workbench.html": "adcf6158210c344702a493f577121bf2fe2bb099db3c018bdb69cbfbafcf348d"
+  },
+  "unverified": [
+    "Windows/macOS physical runtime",
+    "Production Aide deployment",
+    "Paid model end-to-end"
+  ]
+}

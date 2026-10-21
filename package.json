@@ -1,0 +1,10 @@
+{
+  "name": "aide-pkg-currenttime",
+  "version": "1.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node scripts/verify.cjs"
+  }
+}
